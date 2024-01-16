@@ -392,6 +392,7 @@ box2d-dev:
   debian: [libbox2d-dev]
   fedora: [Box2D-devel]
   nixos: [box2d]
+  openembedded: [box2d]
   ubuntu: [libbox2d-dev]
 bullet:
   alpine: [bullet-dev]
@@ -554,6 +555,7 @@ clang-format:
   fedora: [clang]
   gentoo: [sys-devel/clang]
   nixos: [clang]
+  openembedded: [clang@meta-clang]
   osx:
     homebrew:
       packages: [clang-format]
@@ -566,6 +568,7 @@ clang-tidy:
   fedora: [clang-tools-extra]
   gentoo: [sys-devel/clang]
   nixos: [clang]
+  openembedded: [clang@meta-clang]
   rhel:
     '*': [clang-tools-extra]
     '7': null
@@ -1247,6 +1250,7 @@ gazebo:
   fedora: [gazebo]
   gentoo: [sci-electronics/gazebo]
   nixos: [gazebo]
+  openembedded: [gazebo]
   slackware: [gazebo]
   ubuntu:
     bionic: [gazebo9]
@@ -1257,6 +1261,7 @@ gazebo11:
     buster: [gazebo11]
   gentoo: [=sci-electronics/gazebo-11*]
   nixos: [gazebo_11]
+  openembedded: [gazebo-rosdev]
   ubuntu:
     focal: [gazebo11]
     jammy: [gazebo]
@@ -1342,6 +1347,7 @@ geos:
   fedora: [geos-devel]
   gentoo: [sci-libs/geos]
   nixos: [geos]
+  openembedded: [geos@meta-oe]
   rhel: [geos-devel]
   ubuntu: [libgeos-dev]
 gettext-base:
@@ -1906,11 +1912,13 @@ hdf5:
   gentoo: [sci-libs/hdf5]
   macports: [hdf5]
   nixos: [hdf5]
+  openembedded: [hdf5@meta-oe]
   ubuntu: [libhdf5-dev]
 hdf5-tools:
   debian: [hdf5-tools]
   gentoo: [sci-libs/hdf5]
   nixos: [hdf5]
+  openembedded: [hdf5@meta-oe]
   ubuntu: [hdf5-tools]
 hostapd:
   arch: [hostapd]
@@ -1966,6 +1974,7 @@ ignition-cmake2:
     buster: [libignition-cmake2-dev]
   gentoo: ['dev-util/ignition-cmake:2']
   nixos: [ignition.cmake2]
+  openembedded: [ignition-cmake2]
   ubuntu:
     focal: [libignition-cmake2-dev]
     jammy: [libignition-cmake2-dev]
@@ -1990,6 +1999,7 @@ ignition-edifice:
 ignition-fortress:
   debian:
     buster: [ignition-fortress]
+  openembedded: [ignition-fortress]
   ubuntu:
     focal: [ignition-fortress]
     jammy: [ignition-fortress]
@@ -2008,6 +2018,7 @@ ignition-fuel-tools6:
 ignition-fuel-tools7:
   debian:
     buster: [libignition-fuel-tools7-dev]
+  openembedded: [ignition-fuel-tools7]
   ubuntu:
     focal: [libignition-fuel-tools7-dev]
     jammy: [libignition-fuel-tools7-dev]
@@ -2029,6 +2040,7 @@ ignition-gazebo5-plugins:
 ignition-gazebo6:
   debian:
     buster: [libignition-gazebo6-dev]
+  openembedded: [ignition-gazebo6]
   ubuntu:
     focal: [libignition-gazebo6-dev]
     jammy: [libignition-gazebo6-dev]
@@ -2051,6 +2063,7 @@ ignition-gui5:
 ignition-gui6:
   debian:
     buster: [libignition-gui6-dev]
+  openembedded: [ignition-gui6]
   ubuntu:
     focal: [libignition-gui6-dev]
     jammy: [libignition-gui6-dev]
@@ -2076,6 +2089,7 @@ ignition-math6:
     buster: [libignition-math6-dev]
   gentoo: ['sci-libs/ignition-math:6']
   nixos: [ignition.math6]
+  openembedded: [ignition-math6]
   ubuntu:
     focal: [libignition-math6-dev]
     jammy: [libignition-math6-dev]
@@ -2101,6 +2115,7 @@ ignition-msgs7:
 ignition-msgs8:
   debian:
     buster: [libignition-msgs8-dev]
+  openembedded: [ignition-msgs8]
   ubuntu:
     focal: [libignition-msgs8-dev]
     jammy: [libignition-msgs8-dev]
@@ -2123,6 +2138,7 @@ ignition-physics5:
 ignition-plugin:
   debian:
     buster: [libignition-plugin-dev]
+  openembedded: [ignition-plugin]
   ubuntu:
     focal: [libignition-plugin-dev]
     jammy: [libignition-plugin-dev]
@@ -2173,6 +2189,7 @@ ignition-transport10:
 ignition-transport11:
   debian:
     buster: [libignition-transport11-dev]
+  openembedded: [ignition-transport11]
   ubuntu:
     focal: [libignition-transport11-dev]
     jammy: [libignition-transport11-dev]
@@ -2519,6 +2536,7 @@ libbluetooth:
   fedora: [bluez-libs]
   gentoo: [net-wireless/bluez-libs]
   nixos: [bluez]
+  openembedded: [bluez5@openembedded-core]
   rhel: [bluez-libs]
   ubuntu: [libbluetooth3]
 libbluetooth-dev:
@@ -3115,6 +3133,7 @@ libdbus-dev:
   fedora: [dbus-devel]
   gentoo: [sys-apps/dbus]
   nixos: [dbus]
+  openembedded: [dbus@openembedded-core]
   ubuntu: [libdbus-1-dev]
 libdc1394-dev:
   arch:
@@ -3168,6 +3187,7 @@ libdraco-dev:
   arch: [draco]
   debian: [libdraco-dev]
   fedora: [draco-devel]
+  openembedded: [draco]
   rhel:
     '*': [draco-devel]
     '8': null
@@ -3449,6 +3469,7 @@ libfyaml-dev:
     bullseye: null
   fedora: [libfyaml-devel]
   nixos: [libfyaml]
+  openembedded: [libfyaml]
   opensuse:
     '*': [libfyaml]
     '15.2': null
@@ -3461,6 +3482,7 @@ libgazebo-dev:
     buster: [libgazebo11-dev]
   fedora: [gazebo-devel]
   gentoo: [=sci-electronics/gazebo-11*]
+  openembedded: [libgazebo11]
   ubuntu:
     focal: [libgazebo11-dev]
     jammy: [libgazebo-dev]
@@ -3669,6 +3691,7 @@ libgpiod-dev:
   fedora: [libgpiod-devel]
   gentoo: [dev-libs/libgpiod]
   nixos: [libgpiod]
+  openembedded: [libgpiod@meta-oe]
   opensuse: [libgpiod-devel]
   rhel:
     '*': [libgpiod-devel]
@@ -3826,6 +3849,7 @@ libignition-common3:
 libignition-common4:
   debian:
     buster: [libignition-common4]
+  openembedded: [ignition-common4]
   ubuntu:
     focal: [libignition-common4]
 libignition-fuel-tools4:
@@ -4416,6 +4440,7 @@ libomp-dev:
   fedora: [libomp-devel]
   gentoo: [sys-libs/libomp]
   nixos: [llvmPackages.openmp]
+  openembedded: [openmp]
   rhel:
     '*': [libomp-devel]
     '7': null
@@ -4490,6 +4515,7 @@ libopenni-dev:
   debian: [libopenni-dev]
   fedora: [openni-devel]
   gentoo: [dev-libs/OpenNI]
+  openembedded: [openni]
   rhel: [openni-devel]
   ubuntu: [libopenni-dev]
 libopenni-nite-dev:
@@ -4507,6 +4533,7 @@ libopenni2-dev:
   fedora: [openni-devel]
   gentoo: [dev-libs/OpenNI2]
   nixos: [openni2]
+  openembedded: [openni2]
   rhel:
     '*': [libfreenect-openni]
     '7': null
@@ -4517,6 +4544,7 @@ libopenscenegraph:
   fedora: [OpenSceneGraph, OpenSceneGraph-devel, OpenThreads, OpenThreads-devel]
   gentoo: [dev-games/openscenegraph]
   nixos: [openscenegraph]
+  openembedded: [openscenegraph]
   opensuse: [OpenSceneGraph, libOpenSceneGraph-devel, libOpenThreads-devel]
   ubuntu: [openscenegraph, libopenscenegraph-dev]
 libopensplice67:
@@ -4602,6 +4630,7 @@ libpaho-mqtt:
   debian: [libpaho-mqtt1.3]
   fedora: [paho-c]
   nixos: [paho-mqtt-c]
+  openembedded: [paho-mqtt-c]
   opensuse: [libpaho-mqtt1]
   ubuntu:
     '*': [libpaho-mqtt1.3]
@@ -4612,6 +4641,7 @@ libpaho-mqtt-dev:
   debian: [libpaho-mqtt-dev]
   fedora: [paho-c-devel]
   nixos: [paho-mqtt-c]
+  openembedded: [paho-mqtt-c]
   opensuse: [libpaho-mqtt-devel]
   ubuntu:
     '*': [libpaho-mqtt-dev]
@@ -4619,12 +4649,14 @@ libpaho-mqtt-dev:
     focal: null
 libpaho-mqttpp:
   nixos: [paho-mqtt-cpp]
+  openembedded: [paho-mqtt-cpp]
   ubuntu:
     '*': [libpaho-mqttpp3-1]
     bionic: null
     focal: null
 libpaho-mqttpp-dev:
   nixos: [paho-mqtt-cpp]
+  openembedded: [paho-mqtt-cpp]
   ubuntu:
     '*': [libpaho-mqttpp-dev]
     bionic: null
@@ -5371,12 +5403,14 @@ libqt5-qml:
   debian: [libqt5qml5]
   gentoo: ['dev-qt/qtdeclarative:5']
   nixos: [qt5.qtdeclarative]
+  openembedded: [qtbase@meta-qt5]
   rhel: [qt5-qtdeclarative]
   ubuntu: [libqt5qml5]
 libqt5-quick:
   debian: [libqt5quick5]
   gentoo: ['dev-qt/qtdeclarative:5']
   nixos: [qt5.qtdeclarative]
+  openembedded: [qtbase@meta-qt5]
   rhel: [qt5-qtdeclarative]
   ubuntu: [libqt5quick5]
 libqt5-serialport:
@@ -5411,6 +5445,7 @@ libqt5-svg:
   fedora: [qt5-qtsvg]
   gentoo: ['dev-qt/qtsvg:5']
   nixos: [qt5.qtsvg]
+  openembedded: [qtsvg@meta-qt5]
   opensuse: [libqt5-qtsvg]
   rhel: [qt5-qtsvg]
   ubuntu: [libqt5svg5]
@@ -5802,6 +5837,7 @@ libtins-dev:
   debian: [libtins-dev]
   fedora: [libtins-devel]
   nixos: [libtins]
+  openembedded: [libtins]
   opensuse: [libtins-devel]
   rhel:
     '*': [libtins-devel]
@@ -6857,6 +6893,7 @@ ocl-icd-opencl-dev:
   debian: [ocl-icd-opencl-dev]
   fedora: [ocl-icd-devel]
   gentoo: [virtual/opencl]
+  openembedded: [ocl-icd@meta-oe]
   rhel: [ocl-icd-devel]
   ubuntu: [ocl-icd-opencl-dev]
 octave:
@@ -7327,6 +7364,7 @@ qml-module-qtquick-dialogs:
 qml-module-qtquick-extras:
   debian: [qml-module-qtquick-extras]
   gentoo: [dev-qt/qtquickcontrols]
+  openembedded: [qtquickcontrols2]
   ubuntu: [qml-module-qtquick-extras]
 qml-module-qtquick-layouts:
   debian: [qml-module-qtquick-layouts]
@@ -7474,6 +7512,7 @@ range-v3:
   fedora: [range-v3-devel]
   gentoo: [dev-cpp/range-v3]
   nixos: [range-v3]
+  openembedded: [range-v3]
   osx:
     homebrew:
       packages: [range-v3]
@@ -7598,6 +7637,7 @@ sdformat:
   fedora: [sdformat-devel]
   gentoo: [dev-libs/sdformat]
   nixos: [sdformat]
+  openembedded: [sdformat]
   rhel:
     '7': [sdformat-devel]
   ubuntu:
@@ -7612,6 +7652,7 @@ sdformat11:
 sdformat12:
   debian:
     buster: [libsdformat12-dev]
+  openembedded: [sdformat]
   ubuntu:
     focal: [libsdformat12-dev]
     jammy: [libsdformat12-dev]
@@ -7713,6 +7754,7 @@ simde:
     '*': [libsimde-dev]
     buster: null
   fedora: [simde-devel]
+  openembedded: [simde]
   rhel:
     '*': [simde-devel]
     '9': null
@@ -7755,6 +7797,7 @@ socat:
   fedora: [socat]
   gentoo: [net-misc/socat]
   nixos: [socat]
+  openembedded: [socat@openembedded-core]
   rhel: [socat]
   ubuntu: [socat]
 sound-theme-freedesktop:
@@ -7830,6 +7873,7 @@ sqlite3:
   fedora: [sqlite]
   gentoo: [=dev-db/sqlite-3*]
   nixos: [sqlite]
+  openembedded: [sqlite3@openembedded-core]
   rhel: [sqlite]
   ubuntu: [sqlite3]
 ssh-askpass:
@@ -8534,6 +8578,7 @@ xsimd:
   fedora: [xsimd-devel]
   gentoo: [dev-cpp/xsimd]
   nixos: [xsimd]
+  openembedded: [xsimd]
   rhel:
     '*': [xsimd-devel]
     '7': null
@@ -8552,6 +8597,7 @@ xtensor:
   arch: [xtensor]
   fedora: [xtensor-devel]
   nixos: [xtensor]
+  openembedded: [xtensor]
   rhel:
     '*': [xtensor-devel]
     '8': null
